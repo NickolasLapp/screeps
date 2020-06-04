@@ -7,7 +7,7 @@ module.exports.loop = function () {
 
   for (const [key, value] of Object.entries(Game.spawns))
   {
-    Spawner.spawn(spawn);
+    spawner.spawn(spawn);
   }
   spawner.spawn()
 
