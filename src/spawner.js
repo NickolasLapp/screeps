@@ -10,6 +10,7 @@ var Spawner = {
           Game.spawns['Spawn1'].spawnCreep([WORK,CARRY,MOVE], new_name,
               {memory: {role: 'harvester'}});
       }
+    }
 };
 
 module.exports = Spawner;
