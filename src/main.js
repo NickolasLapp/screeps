@@ -1,8 +1,15 @@
 var roleHarvester = require('role.harvester');
 var roleUpgrader = require('role.upgrader');
 var roleBuilder = require('role.builder');
+var spawner = require('Spawner');
 
 module.exports.loop = function () {
+
+  for (const [key, value] of Object.entries(Game.spawns))
+  {
+    Spawner.spawn(spawn);
+  }
+  spawner.spawn()
 
     var tower = Game.getObjectById('TOWER_ID');
     if(tower) {

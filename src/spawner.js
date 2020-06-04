@@ -1,6 +1,6 @@
-var spawner = {
+var Spawner = {
     /** @param {spawn} spawn**/
-    run: function(spawn) {
+    spawn: function(spawn) {
       var harvesters = _.filter(Game.creeps, (creep) => creep.memory.role == 'harvester');
       console.log('Harvesters: ' + harvesters.length);
 
@@ -11,3 +11,5 @@ var spawner = {
               {memory: {role: 'harvester'}});
       }
 };
+
+module.exports = Spawner;
