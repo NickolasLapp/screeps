@@ -5,7 +5,7 @@ var spawner = require('spawner');
 
 module.exports.loop = function () {
 
-  for (const [key, value] of Object.entries(Game.spawns))
+  for (const [spawn_name, spawn] of Object.entries(Game.spawns))
   {
     spawner.spawn(spawn);
   }
